@@ -1,5 +1,5 @@
 # TestUnhandledCrashConsoleApp
-Test for issue #118049 (Ubuntu Linux)
+Test for issue [#118049](https://github.com/dotnet/runtime/issues/118049) (Ubuntu Linux)
 
 1. Clone TestUnhandledCrashConsoleApp source code
 2. Modify TestUnhandledCrashConsoleApp.csproj to select the target framework 
