@@ -1,4 +1,11 @@
-﻿AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
+﻿// Check if we should run the LINQ pattern demonstration instead of the crash test
+if (args.Length > 0 && args[0] == "--demo-linq")
+{
+    TestUnhandledCrashConsoleApp.LinqPatternDemonstration.Demonstrate();
+    return;
+}
+
+AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
 {
     Console.WriteLine("Unhandled exception: " + e.ExceptionObject.ToString());
 };
